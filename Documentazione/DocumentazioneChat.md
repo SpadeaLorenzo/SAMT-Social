@@ -22,3 +22,22 @@
 - Considerazioni personali
 1. Sitografia
 2. Allegati
+
+
+
+# Introduzione
+## Docenti di riferimento e responsabile progetto
+ - Luca Muggiasca(responsabile di progetto).
+ - Geo Pretirni(docente di riferimento).
+### Scuola
+- Scuola Arti e Mestieri di Trevano.
+### Sezione 
+- Informatica. 
+### Anno
+- Terzo.
+### Modulo
+- 306, Sviluppo progetti.
+### Date
+- Data di inizio: 02.09.2021
+- Data di consegna progetto : 23.12.2021
+
