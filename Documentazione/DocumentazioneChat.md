@@ -55,3 +55,9 @@ del quarto anno. Inoltre grazie a quest'erperienza sarò in grado di combinare m
 di interfacce web con linguaggi di markUp, la messa in piedi di strutture di comunicazione e hosting come server e web server ed infine questo lavoro mi insegnerà
 cosa significa lavorare ad un ipotetico progetto in una ditta e di come affrontare e documentare ogni passaggio.
 
+
+# Analsi
+
+## Analisi del dominio
+Ci sono molte applicazioni di messaggistica ai giorni d'oggi che offrono anche molte altre possibilità come le funzioni di messaggistica vocale , video etc..
+Questo sistema si baserà sull'AD(active directory) scolastica e sarà in grado di fornire all'utente un ambiente accessibile solo ai membri del sistema scolastico.
