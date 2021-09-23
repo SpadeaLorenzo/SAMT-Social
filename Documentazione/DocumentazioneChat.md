@@ -65,7 +65,31 @@ Questo sistema si baserà sull'AD(active directory) scolastica e sarà in grado 
 ## Analisi e specifica dei requisiti
 Il committente ha richiesto un applicativo web basato su un sistema di immagazzinamento dati ad oggetti. L'applicativo deve permettere ad un utente di poter comunicare all'interno di canali che possono essere aggiunti o tolti a piacimento.L'applicativo dispone di una gestione amministrativa dove gli utenti amministratori avranno accesso a delle funzionalità di moderazione aggiuntive quali: ban, monitoraggio log e broadcast di messaggi.
 
-| ID  1  | REQUISITO     | 
+| ID  | REQUISITO 1    | 
+| VERSIONE |  1.0  | 
+| NOME | CREAZIONE DATABASE    | 
 | :------------- | :----------: |
-|  | More Stuff   | 
-|  | Put Pipes In | 
+| SUB ID | REQUISITO    |
+|  01| il database deve essere ad oggetti. |  
+|  02| il database deve essere in MongoDB   | 
+
+| ID  | REQUISITO 2   | 
+| PRIORITÀ | 1|
+|  NOME| CREAZIONE WEB INTERFACE   | 
+| :------------- | :----------: |
+| SUB ID | REQUISITO    |
+|  01| Deve essere dinamica e moderna |  
+
+| ID  | REQUISITO 2   | 
+| PRIORITÀ | 1|
+|  NOME| CREAZIONE WEB INTERFACE   | 
+| :------------- | :----------: |
+| SUB ID | REQUISITO    |
+|  01| Deve essere dinamica e moderna |  
+
+
+
+
+
+
+|  |    | 
