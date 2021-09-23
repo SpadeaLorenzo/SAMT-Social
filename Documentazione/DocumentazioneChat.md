@@ -179,20 +179,40 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
 |  01| Possibilità di incorporare messaggi multimediatici|
 
 
+## Use Case
+ pending.
+
+
+ ## Pianificazione
+ - Per realizzare questo prodotto ho scelto un a programmazione di tipo waterfall che viene illustrata nella seguente immagine tramite le fasi del progetto
+  
+  ![image](imageSource/GanttProgetto.PNG)
+
+## Analisi requisiti
+| Prodotto | Caratteristiche   | 
+| :------------- | :----------: |
+| Computer| XXX|
+| Account Scolastico| nome utente e password | 
+| Monitor | XXX|
+| Mouse  | XXX |
+| Tastiera | XXX |
+
+
+## Progettazione 
+ - Interfaccia Web<br> 
+ L'interfaccia web si deve distinguere per essere user friendly, dinamica e con uno stile moderno(segue uno schizzo del risultato finale).
+ 
+  ![image](imageSource/UserInterface.png)
+
+  Nella barra di sinistra troveremo i canali testuali di ogni utente. in fondo alla lista dei canali troveremo un pulsante per aggiungere delle nuove conversazioni.
+  Il riquadro principale a destra sarà invece la finestra di comunicazione tra gli utenti con una barra per scrivere.In fondo a destra della barra troviamo anche un opzione di timing per i messaggi.
+  A fianco della barra troviamo 3 tasti
+  - invio, per inviare messaggi.
+  - gli emoticon, da integrare al messaggio.
+  - i file, per importare i file(immagini/GIF/video) nel messaggio. <br><br>
+  Nella sezione in alto troviamo i 3 normali pulsanti di ogni interfaccia web(ridimensionare, nascondere e chiudere).
+  Si trova anche un bottone bacheca che una volta cliccato aprirà una nuova finestra dove potremo vedere gli annunci fatti dalla segreteria.
+  Un bottone di logout dal quale un utente potrà disconnettersi ed infine una barra di ricerca per cercare altri utenti con cui messagiare.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-|  |    | 
