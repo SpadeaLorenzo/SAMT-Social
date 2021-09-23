@@ -60,4 +60,12 @@ cosa significa lavorare ad un ipotetico progetto in una ditta e di come affronta
 
 ## Analisi del dominio
 Ci sono molte applicazioni di messaggistica ai giorni d'oggi che offrono anche molte altre possibilità come le funzioni di messaggistica vocale , video etc..
-Questo sistema si baserà sull'AD(active directory) scolastica e sarà in grado di fornire all'utente un ambiente accessibile solo ai membri del sistema scolastico.
+Questo sistema si baserà sull'AD(active directory) scolastica e sarà in grado di fornire all'utente un ambiente accessibile solo ai membri del sistema scolastico per lo scambio di informazioni.
+
+## Analisi e specifica dei requisiti
+Il committente ha richiesto un applicativo web basato su un sistema di immagazzinamento dati ad oggetti. L'applicativo deve permettere ad un utente di poter comunicare all'interno di canali che possono essere aggiunti o tolti a piacimento.L'applicativo dispone di una gestione amministrativa dove gli utenti amministratori avranno accesso a delle funzionalità di moderazione aggiuntive quali: ban, monitoraggio log e broadcast di messaggi.
+
+| ID  1  | REQUISITO     | 
+| :------------- | :----------: |
+|  | More Stuff   | 
+|  | Put Pipes In | 
