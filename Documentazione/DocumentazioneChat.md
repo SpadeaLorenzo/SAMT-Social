@@ -199,13 +199,13 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
 
 
 ## Progettazione 
- - Interfaccia Web<br> 
+ ### Interfaccia Web<br> 
  L'interfaccia web si deve distinguere per essere user friendly, dinamica e con uno stile moderno(segue uno schizzo del risultato finale).
  
   ![image](imageSource/UserInterface.png)
 
   Nella barra di sinistra troveremo i canali testuali di ogni utente. in fondo alla lista dei canali troveremo un pulsante per aggiungere delle nuove conversazioni.
-  Il riquadro principale a destra sarà invece la finestra di comunicazione tra gli utenti con una barra per scrivere.In fondo a destra della barra troviamo anche un opzione di timing per i messaggi.
+  Il riquadro principale a destra sarà invece la finestra di comunicazione tra gli utenti con una barra per scrivere. In fondo a destra della barra troviamo anche un opzione di timing per i messaggi.
   A fianco della barra troviamo 3 tasti
   - invio, per inviare messaggi.
   - gli emoticon, da integrare al messaggio.
@@ -213,6 +213,26 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
   Nella sezione in alto troviamo i 3 normali pulsanti di ogni interfaccia web(ridimensionare, nascondere e chiudere).
   Si trova anche un bottone bacheca che una volta cliccato aprirà una nuova finestra dove potremo vedere gli annunci fatti dalla segreteria.
   Un bottone di logout dal quale un utente potrà disconnettersi ed infine una barra di ricerca per cercare altri utenti con cui messagiare.
+  Inoltre, cliccando sul logo dell'utente in alto a sinistra potremo accedere al profilo utente.
+
+### Profilo utente
+  ![image](imageSource/ProfiloUtente.png)
+
+  In questo riquadro troveremo l'immagine profilo dell'utente(di defaul sarà stilizzata) che ognuno potrà cambiare.
+  Subito sotto troveremo un riquadro dove un utente potrà inserire Una descrizione personale.
+  In alto a sinistra comparirà una freccia per tornare alle chat, funzione che sarà richiamata anche solo cliccando sui canali(posti lateralmente) che non scompariranno.
+  in alto a destra(solo per chi avrà i permessi amministratori) troveremo il pulsante per accedere alle impostazioni.
+
+  ### Bacheca
+  ![image](imageSource/bacheca.png)
+  Il riquadro bacheca si aprirà cliccando sopra la voce "bacheca" nel menù principale. Si aprirà una pagina dove vedremo gli annunci della segreteria.
+  Gli utenti "segretariato" avranno un ruolo speciale e saranno gli unici a poter scrivere nell'interfaccia della bacheca.
+
+
+
+  
+
+  
 
 
 
