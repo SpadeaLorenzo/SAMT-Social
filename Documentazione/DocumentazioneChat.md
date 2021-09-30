@@ -230,7 +230,24 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
 
 
 
+  ### Use case
+  <br>
+  livello di dettaglio: basso
   
+  ![image](imageSource/useCase.png)
+  - studente: <br>
+Uno studente una volta fatto l'accesso potrà usare l'applicazione con l'unico scopo di chattare, leggere la bacheca e modificare il proprio profilo.
+
+- segreteria <br>
+Un utente segretariato, effetuato il login, potrà avere accesso alla chat(e dunque a tutte le funzioni disponibili all'utente: studente). Inoltre sarà l'uncio utente ad avere accesso sia in lettura che in scrittura alla bacheca.
+
+- admin/docenti <br>
+  Un utente admin, effetuato il login, potrà avere accesso alla chat(e dunque a tutte le funzioni disponibili all'utente: studente). 
+  Avrà accesso ad un pannello amministrativo dal quale potrà:
+   - bannare un utente.
+   - mandare un warning all'utente.
+
+
 
   
 
