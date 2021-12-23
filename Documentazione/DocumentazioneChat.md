@@ -486,9 +486,10 @@ Purtroppo, date le scarse conoscenze nell'ambito e, in parte anche dovuto alle q
 penso che pian piano porterò comunque avanti il tutto cercando di arrivare ad un applicativo funzionante, anche solo per piacere personale.
 
 # Sitografia
-https://www.mongodb.com/cloud/atlas/lp/general/try?utm_source=compass&utm_medium=produc MongoDB
-https://docs.mongodb.com/manual/tutorial/getting-started/ MongoDB
-https://www.w3schools.com/nodejs/ Node JS
-https://expressjs.com/it/ Express JS
-https://it.reactjs.org/tutorial/tutorial.html React js
-https://dev.to/kmcknight91/how-to-use-insomnia-to-test-api-endpoints-1lad Insomnia
+
+- https://www.mongodb.com/cloud/atlas/lp/general/try?utm_source=compass&utm_medium=produc MongoDB
+- https://docs.mongodb.com/manual/tutorial/getting-started/ MongoDB
+- https://www.w3schools.com/nodejs/ Node JS
+- https://expressjs.com/it/ Express JS
+- https://it.reactjs.org/tutorial/tutorial.html React js
+- https://dev.to/kmcknight91/how-to-use-insomnia-to-test-api-endpoints-1lad Insomnia
