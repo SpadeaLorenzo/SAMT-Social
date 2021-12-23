@@ -252,7 +252,7 @@ chiamata `express` (libreria per la gestione delle richieste http).
 
 - source: `index.js`
 <br>
-![image](imageSource/APP.PNG)
+![image](imageSource/APP.png)
 
 In questa immagine vediamo come poter inizializzare l'applicazione fornendogli una connessione con un database a cui facciamo riferimento 
 e mettendo in ascolto express su una determinata porta che decidiamo noi: in quest o caso la `8080`.
@@ -269,7 +269,7 @@ Ogni route ha delle funzioni specifiche che ci permettono di interagire corretta
 
 esempio Route;
 <br>
-![image](imageSource/Route.PNG)
+![image](imageSource/Route.png)
 <br>
  
  Le routes della Rest API si occupano di comunicare con il database per gestire gli eventi dell'applicativo. Dunque ad esempio per mandare un messaggio ad un altro utente
@@ -284,7 +284,7 @@ Ad per la registrazione di un utente, tramite un testing software che si chiama 
 
 esempio MongoDB Schema:
 <br>
-![image](imageSource/SchemaDB.PNG)
+![image](imageSource/SchemaDB.png)
 <br>
 Qui risciamo a vedere come l'oggetto User è identificato da un attributo username che può avere diverse proprietà. In oltre con questo tipo di schematizzazione ad oggetti 
 il salvataggio dei dati e i relativi controlli di corretta formazione sono semplificati dalle regole che possiamo imporre ad esempio con il comando `required` o con quello
@@ -292,7 +292,7 @@ il salvataggio dei dati e i relativi controlli di corretta formazione sono sempl
 
 esempio registrazione utente sul cloud:
 <br>
-![image](imageSource/usersDB.PNG)
+![image](imageSource/usersDB.png)
 <br>
 Come possiamo vedere un utente viene salvato come oggetto avente attributi ed in questo caso possiamo vedere come per esempio le email siano perforza diverse grazie ai vincoli imposti sullo schema 
 in precedenza. Un altro aspetto importante è che con questo tipo di database possiamo gentire anche degli eventuali permessi: come da esempio, se salvassi un utente come admin questo poi nell'applicativo avrebbe i relativi permessi.
@@ -307,6 +307,6 @@ viene creato in base alle proprie necessità.
 
 Un esempio: 
 <br>
-![image](imageSource/react.PNG)
+![image](imageSource/react.png)
 <br>
 Nella main App abbiamo richiamato un componente <Toolbar> che è stato definito in precedenza da
