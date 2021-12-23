@@ -251,6 +251,7 @@ comunicazioni tra DB, aplicativo WEB e che fosse in grado di poter elaborare le 
 chiamata `express` (libreria per la gestione delle richieste http).
 
 - source: `index.js`
+<br>
 ![image](imageSource/APP.PNG)
 
 In questa immagine vediamo come poter inizializzare l'applicazione fornendogli una connessione con un database a cui facciamo riferimento 
@@ -266,8 +267,46 @@ Ogni route ha delle funzioni specifiche che ci permettono di interagire corretta
 - Put
 - Patch
 
+esempio Route;
+<br>
+![image](imageSource/Route.PNG)
+<br>
+ 
+ Le routes della Rest API si occupano di comunicare con il database per gestire gli eventi dell'applicativo. Dunque ad esempio per mandare un messaggio ad un altro utente
+ avremo una route che si occpuerà di mandare la richiesta al server e di mandare le informazioni al database.
+
+## MongoDB database
+
+Come base per la raccolta dati ho usato un DB object oriented che in questo caso è stato MongoDB.
+Per fare ciò ho creato un cloud su `https://cloud.mongodb.com/`. una volta avuto accesso allo spazio messo a disposizione ho creato una `collection`
+nella quale mi è stato possibile salvare i dati delle richieste fatte tra back-end e server.
+Ad per la registrazione di un utente, tramite un testing software che si chiama `insomnia` sono stato in grado di registrare utenti e di poi vedere comparire i loro dati sul cloud.
+
+esempio MongoDB Schema:
+<br>
+![image](imageSource/SchemaDB.PNG)
+<br>
+Qui risciamo a vedere come l'oggetto User è identificato da un attributo username che può avere diverse proprietà. In oltre con questo tipo di schematizzazione ad oggetti 
+il salvataggio dei dati e i relativi controlli di corretta formazione sono semplificati dalle regole che possiamo imporre ad esempio con il comando `required` o con quello
+`unique`
+
+esempio registrazione utente sul cloud:
+<br>
+![image](imageSource/usersDB.PNG)
+<br>
+Come possiamo vedere un utente viene salvato come oggetto avente attributi ed in questo caso possiamo vedere come per esempio le email siano perforza diverse grazie ai vincoli imposti sullo schema 
+in precedenza. Un altro aspetto importante è che con questo tipo di database possiamo gentire anche degli eventuali permessi: come da esempio, se salvassi un utente come admin questo poi nell'applicativo avrebbe i relativi permessi.
+Si hanno anche molte altre informazioni utili come data creazione e modifica che ci permetteranno poi di loggare eventuali cambiamenti.
 
 
 
+## REACT
+React è la libreria di javascript che ho usato per realizzare l'interfaccia grafica. È una libraria piuttosto prestazionale che permette di creare user interface interattive.
+Questa libreria permette di creare dei `components` che velocizzano ed ottimizzano il lavoro dell'applicazione. Si può immaginare che un componente sia un elemento html che viene però
+viene creato in base alle proprie necessità.
 
-
+Un esempio: 
+<br>
+![image](imageSource/react.PNG)
+<br>
+Nella main App abbiamo richiamato un componente <Toolbar> che è stato definito in precedenza da
