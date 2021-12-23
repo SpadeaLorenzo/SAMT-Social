@@ -251,7 +251,7 @@ comunicazioni tra DB, aplicativo WEB e che fosse in grado di poter elaborare le 
 chiamata `express` (libreria per la gestione delle richieste http).
 
 - source: `index.js`
-<br>
+
 ![image](imageSource/APP.png)
 
 In questa immagine vediamo come poter inizializzare l'applicazione fornendogli una connessione con un database a cui facciamo riferimento 
@@ -268,7 +268,7 @@ Ogni route ha delle funzioni specifiche che ci permettono di interagire corretta
 - Patch
 
 esempio Route;
-<br>
+
 ![image](imageSource/Route.png)
 <br>
  
@@ -283,7 +283,7 @@ nella quale mi è stato possibile salvare i dati delle richieste fatte tra back-
 Ad per la registrazione di un utente, tramite un testing software che si chiama `insomnia` sono stato in grado di registrare utenti e di poi vedere comparire i loro dati sul cloud.
 
 esempio MongoDB Schema:
-<br>
+
 ![image](imageSource/SchemaDB.png)
 <br>
 Qui risciamo a vedere come l'oggetto User è identificato da un attributo username che può avere diverse proprietà. In oltre con questo tipo di schematizzazione ad oggetti 
@@ -291,7 +291,7 @@ il salvataggio dei dati e i relativi controlli di corretta formazione sono sempl
 `unique`
 
 esempio registrazione utente sul cloud:
-<br>
+
 ![image](imageSource/usersDB.png)
 <br>
 Come possiamo vedere un utente viene salvato come oggetto avente attributi ed in questo caso possiamo vedere come per esempio le email siano perforza diverse grazie ai vincoli imposti sullo schema 
@@ -306,7 +306,7 @@ Questa libreria permette di creare dei `components` che velocizzano ed ottimizza
 viene creato in base alle proprie necessità.
 
 Un esempio: 
-<br>
-![image](imageSource/react.png)
+
+![image](imageSource/react.PNG)
 <br>
 Nella main App abbiamo richiamato un componente <Toolbar> che è stato definito in precedenza da
