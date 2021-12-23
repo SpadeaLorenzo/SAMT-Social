@@ -113,15 +113,6 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
 |  01| Login con password e nome utente|
 |  02| Login con Ldap interno alla scuola   |
 
-| ID  | REQUISITO 7  | 
-| :------------- | :----------: |
-| PRIORITÀ | 1|
-|  NOME| LOGIN AMMINISTRATORE  | 
-| SUB ID | REQUISITO    |
-|  01| Login con password e nome utente|
-|  02| Login con Ldap interno alla scuola   |   
-|  03| Login con permessi amministrativi   | 
-
 | ID  | REQUISITO 8  | 
 | :------------- | :----------: |
 | PRIORITÀ | 1|
@@ -129,25 +120,6 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
 | SUB ID | REQUISITO    |
 |  01| Log eliminazione messaggi(Data, ora, utente)|
 |  02| Log invio messaggi (Data, ora, utente)  |    
-
-| ID  | REQUISITO 9   | 
-| :------------- | :----------: |
-| PRIORITÀ | 1|
-|  NOME| INSTALLAZIONE SERVER   | 
-| SUB ID | REQUISITO    |
-|  01| Comunicazione per autenticare gli utenti con LDAP protocols|
-
-| ID  | REQUISITO 10   | 
-| :------------- | :----------: |
-| PRIORITÀ | 1|
-|  NOME| CREAZIONE WEB SERVER  | 
-| SUB ID | REQUISITO    |
-|  01| Installazioen Apache|
-|  02| Installazione PHP   | 
-|  03| Hosting applicazione web|
-|  04| Creazione percorsi applicazione web|
-|  05| Comunicazione Database|
-
 
 | ID  | REQUISITO 11  | 
 | :------------- | :----------: |
@@ -196,6 +168,20 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
 | Monitor | XXX|
 | Mouse  | XXX |
 | Tastiera | XXX |
+| Node JS | v16.0.6|
+| Visual Studio Code|Editor|
+| Insomnia | testing API|
+| MongDB | DBMS| 
+
+## Librerie necessarie
+ - mongoose
+ - React JS
+ - Express
+ - morgan
+ - nodemon
+ - bcrypt
+ - dotenv
+ - helmet
 
 
 ## Progettazione 
@@ -246,10 +232,42 @@ Un utente segretariato, effetuato il login, potrà avere accesso alla chat(e dun
   Avrà accesso ad un pannello amministrativo dal quale potrà:
    - bannare un utente.
    - mandare un warning all'utente.
+<br>
 
 
 
-  
+
+# Implementazione
+
+La fase successiva alla progettazione consiste nella realizzazione dell'applicazione che in questo specifico caso può essere suddivisa in due parti prinicpali:
+
+- REST API , ovvero il back-end dell'applicativo che interagisce con l'applicativo e il database.
+- REACT , la parte visiva dell'applicativo.
+
+## REST API
+
+Per questa prima sezione dell'applicativo ho deciso di svilluppare una REST API di modo che l'applicativo avesse un supporto che potesse gestire le 
+comunicazioni tra DB, aplicativo WEB e che fosse in grado di poter elaborare le richieste fatte dagli utenti. Per sviluppare il back-end ho usato un alibreria di npm 
+chiamata `express` (libreria per la gestione delle richieste http).
+
+- source: `index.js`
+![image](imageSource/APP.PNG)
+
+In questa immagine vediamo come poter inizializzare l'applicazione fornendogli una connessione con un database a cui facciamo riferimento 
+e mettendo in ascolto express su una determinata porta che decidiamo noi: in quest o caso la `8080`.
+In questo pezzo di codice inizializziamo anche dei `middelware` che ci permettono di agevolare le comunicazioni tra i vari protocolli.
+
+Una Rest API funziona tramite richieste http e per esempio se nel nostro applicativo volessimo poter fare una richiesta specifica dovremmo 
+creare delle `routes` , ovvero dei link a cui risponde il server che abbiamo creato prima. Per richiamare una route usiamo il comando: `app.use("link", route);`
+Ogni route ha delle funzioni specifiche che ci permettono di interagire correttamente con l'applicativo:
+- Get
+- Post
+- Delete
+- Put
+- Patch
+
+
+
 
 
 
