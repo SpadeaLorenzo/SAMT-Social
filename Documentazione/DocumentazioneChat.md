@@ -113,7 +113,7 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
 |  01| Login con password e nome utente|
 |  02| Login con Ldap interno alla scuola   |
 
-| ID  | REQUISITO 8  | 
+| ID  | REQUISITO 7  | 
 | :------------- | :----------: |
 | PRIORITÀ | 1|
 |  NOME| LOG DATABASE  | 
@@ -121,7 +121,7 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
 |  01| Log eliminazione messaggi(Data, ora, utente)|
 |  02| Log invio messaggi (Data, ora, utente)  |    
 
-| ID  | REQUISITO 11  | 
+| ID  | REQUISITO 8  | 
 | :------------- | :----------: |
 | PRIORITÀ | 2|
 |  NOME| AUTO ELIMINAZIONE MESSAGGI   | 
@@ -129,21 +129,21 @@ Il committente ha richiesto un applicativo web basato su un sistema di immagazzi
 | 01 | Possibilità di impostare un timer per l'auto cancellazione dei messaggi |
 
 
-| ID  | REQUISITO 10 |  
+| ID  | REQUISITO 9 |  
 | :------------- | :----------: |
 | PRIORITÀ | 3|
 |  NOME| MAPPA UNICODE    | 
 | SUB ID | REQUISITO    |
 |  01| Un utente deve avere a disposizione tutta la mappa unicode di caratteri per messaggiare| 
 
-| ID  | REQUISITO 11   | 
+| ID  | REQUISITO 10   | 
 | :------------- | :----------: |
 | PRIORITÀ | 3|
 |  NOME| EMOTICON   | 
 | SUB ID | REQUISITO    |
 |  01| Aggiunta emoticon nelle conversazioni|
 
-| ID  | REQUISITO 12  | 
+| ID  | REQUISITO 11  | 
 | :------------- | :----------: |
 | PRIORITÀ | 3|
 |  NOME| INVIO IMMAGINI   | 
@@ -288,7 +288,7 @@ esempio MongoDB Schema:
 <br>
 Qui risciamo a vedere come l'oggetto User è identificato da un attributo username che può avere diverse proprietà. In oltre con questo tipo di schematizzazione ad oggetti 
 il salvataggio dei dati e i relativi controlli di corretta formazione sono semplificati dalle regole che possiamo imporre ad esempio con il comando `required` o con quello
-`unique`
+`unique`.
 
 esempio registrazione utente sul cloud:
 
@@ -309,4 +309,186 @@ Un esempio:
 
 ![image](imageSource/react.PNG)
 <br>
-Nella main App abbiamo richiamato un componente <Toolbar> che è stato definito in precedenza da
+Nella main App abbiamo richiamato un componente <Toolbar> che è stato definito in precedenza da noi.
+
+
+## Test
+
+### Protocollo di test
+
+  |Test Case      | TC-001                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |creazione DB  |
+  |**Riferimento**|Req - 1                               |
+  |**Descrizione**| avere un DB ad oggetti.|
+  |**Risultati attesi** | Esiste un spazio di archiviazione funzionante. |
+
+  |Test Case      | TC-002                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |WEB interface |
+  |**Riferimento**|Req - 2                               |
+  |**Descrizione**| Avere una UI dinamica e moderna|
+  |**Risultati attesi** | La UI deve essere moderna e dinamica |
+
+
+  |Test Case      | TC-003                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |Creazione/eliminazione canali|
+  |**Riferimento**|Req - 3                               |
+  |**Descrizione**| Si può creare o eliminare un canale.|
+  |**Risultati attesi** | un utente può creare ed eliminare canali. |
+
+
+  |Test Case      | TC-004                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |Eliminazione messagi|
+  |**Riferimento**|Req - 4                               |
+  |**Descrizione**| eliminare un messaggio.|
+  |**Risultati attesi** | L'utente può eliminare un messaggio. |
+
+  |Test Case      | TC-005                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |messaggio broadcast|
+  |**Riferimento**|Req - 5                               |
+  |**Descrizione**| Un admin manda un messaggio in broadcast.|
+  |**Risultati attesi** | L'utente admin può mandare un messaggio in broadcast. |
+
+ |Test Case      | TC-006                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |Login utente|
+  |**Riferimento**|Req - 6                               |
+  |**Descrizione**| Login con ldap|
+  |**Risultati attesi** | L'utente può fare login con ldap. |
+
+
+  |Test Case      | TC-007                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |log Database|
+  |**Riferimento**|Req - 7                               |
+  |**Descrizione**| Il database tiene dei log.|
+  |**Risultati attesi** | Il DB manager può tenere conto dei log(messaggi eliminati). |
+
+  |Test Case      | TC-008                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |Auto purge messaggio|
+  |**Riferimento**|Req - 9                               |
+  |**Descrizione**| Un messaggio si può eliminare da solo.|
+  |**Risultati attesi** | L'utente può impostare un timer di eliminazione automatico per i messaggi. |
+
+  |Test Case      | TC-009                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |Mappa Unicode|
+  |**Riferimento**|Req - 6                               |
+  |**Descrizione**| messaggiare con qualunque carattere.|
+  |**Risultati attesi** | L'utente può mandare un messaggi con tutti i caratteri unicode. |
+
+  |Test Case      | TC-010                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |Emoticon|
+  |**Riferimento**|Req - 10                               |
+  |**Descrizione**|Un utente può usare le emoticon.|
+  |**Risultati attesi** | L'utentepuò mandare un messaggio con emoticon. |
+
+  |Test Case      | TC-011                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |Invio Immagini|
+  |**Riferimento**|Req - 11                               |
+  |**Descrizione**| Inviare immagini.|
+  |**Risultati attesi** | Un utente può inviare immagini. |
+
+# Risulatati
+
+  |Test Case      | TC-001                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |creazione DB |
+  |**Descrizione**|Il database è in piedi e funziona.|
+  |**Passato**|✔                     |
+
+  |Test Case      | TC-002                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |WEB interface |
+  |**Descrizione**| Avere una UI dinamica e moderna.|
+  |**Passato**| X non completata                   |
+
+
+  |Test Case      | TC-003                               |
+  |---------------|--------------------------------------|
+  |**Nome**       |Creazione/eliminazione canali. |
+  |**Descrizione**| Si puÒ creare o eliminare un canale. |
+  |**Passato**|✔                     |
+
+  |Test Case      | TC-004                               |
+  |---------------|-------------------------------------- |
+  |**Nome**       | Eliminazione messaggio.|
+  |**Descrizione**| eliminare un messaggio. |
+  |**Passato**|✔    
+
+  |Test Case      | TC-005                               |
+  |---------------|-------------------------------------- |
+  |**Nome**       | Messaggio broadcast|
+  |**Descrizione**| Un admin manda un messaggio in broadcast.  |
+  |**Passato**| X 
+
+  |Test Case      | TC-006                               |
+  |---------------|-------------------------------------- |
+  |**Nome**       | Login LDAP |
+  |**Descrizione**| L'utente può fare login con ldap. |
+  |**Passato**|X    
+
+  |Test Case      | TC-007                               |
+  |---------------|-------------------------------------- |
+  |**Nome**       | log Database |
+  |**Descrizione**| Il database tiene dei log. |
+  |**Passato**|✔ 
+
+  |Test Case      | TC-008                               |
+  |---------------|-------------------------------------- |
+  |**Nome**       | Auto purge messaggio |
+  |**Descrizione**| Un messaggio si può eliminare da solo. |
+  |**Passato**|X  
+
+   |Test Case      | TC-009                               |
+  |---------------|-------------------------------------- |
+  |**Nome**       | Mappa Unicode |
+  |**Descrizione**| Messaggiare con qualunque carattere. |
+  |**Passato**|✔ 
+
+   |Test Case      | TC-010                               |
+  |---------------|-------------------------------------- |
+  |**Nome**       | Emoticon |
+  |**Descrizione**| L'utentepuò mandare un messaggio con emoticon |
+  |**Passato**|X 
+
+  |Test Case      | TC-011                               |
+  |---------------|-------------------------------------- |
+  |**Nome**       | Invio Immagini |
+  |**Descrizione**| Gli utenti non possono essere gestiti |
+  |**Passato**| Circa: può postare un immagine |
+
+
+# Mancanze o limitazioni conosciute
+L'interfaccia grafica dell'applicazione non è completa, anzi appena iniziata.
+
+# Consuntivo
+Il Gantt consuntivo è completamente diverso rispetto a quello preventivo sia in termini di tempistiche ma addirittura le task stesse sono diverse.
+Imparando a conoscere come affrontare il progetto mi sono accorto che molte delle supposizioni che avevo fatto, sia tempistiche che non, erano completamente diverse rispetto 
+a quello che mi ero propositato. La parte che più si discosta a livello temporale dal Gantt originale è la tempistica di studio delle varie fasi, cosa che ha richiesto molto più tempo del previsto.
+  
+
+# Conclusioni
+Il progetto per intero non è funzionante: l'utenza non ha a disposizione un'interfaccia grafica che gli permette di interagire secondo lo scopo del progetto. Se venisse terminata l'interfaccia grafica
+e visto che il back-end è funzionante ed è testato si potrebbe arrivare ad una soluzione che faccia funzionare l'applicativo.
+
+# Considerazioni personali
+Con questo primo progetto mi sono addentrato nel mondo del full-stack development per quello che riguarda il mondo degli applicativi web. Ho imparato nuovi tipi di programmazione che sono sicuro mi torneranno molto utili ma che anche mi sono piaciuti.
+Ho imparato anche come strutturare un database ad oggetti con MongoDB, cosa che ultimamente sta prendendo molto piede e che dunque mi potrà aiutare più avanti.
+Purtroppo, date le scarse conoscenze nell'ambito e, in parte anche dovuto alle quarantena da covid, il tempo per portare avanti tutto il progetto fino alla fine non è stato abbastanza.
+penso che pian piano porterò comunque avanti il tutto cercando di arrivare ad un applicativo funzionante, anche solo per piacere personale.
+
+# Sitografia
+https://www.mongodb.com/cloud/atlas/lp/general/try?utm_source=compass&utm_medium=produc MongoDB
+https://docs.mongodb.com/manual/tutorial/getting-started/ MongoDB
+https://www.w3schools.com/nodejs/ Node JS
+https://expressjs.com/it/ Express JS
+https://it.reactjs.org/tutorial/tutorial.html React js
+https://dev.to/kmcknight91/how-to-use-insomnia-to-test-api-endpoints-1lad Insomnia
